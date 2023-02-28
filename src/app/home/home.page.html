@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+      <ion-radio-group [(ngModel)]="radioSelecionada"> <!--oq faz o ngmodel? pega um valor do html e manda par o ts, la no ts precisa ter uma variavel seelecionada para ter o ocnteudo-->
+        <ion-list-header> Escolha uma opção: </ion-list-header> <!--coloca dentro da lista pois é rolavel apois-->
+
+        <ion-item>
+          <ion-label>Opção 1</ion-label> 
+          <ion-radio value="option1"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Opção 2</ion-label>
+          <ion-radio value="option2"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Opção 3</ion-label>
+          <ion-radio value="option3"></ion-radio>
+        </ion-item>
+
+      </ion-radio-group>
+    </ion-list>
+    <ion-button (click)="verificarRadio()">Verificar seleção</ion-button> <!--fora da lista ent ele fica no rodapé fixo ali-->
+</ion-content>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
